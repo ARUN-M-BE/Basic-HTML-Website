@@ -16,7 +16,8 @@
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="ARUN-M - CV">
-    <meta property="og:description" content="A professional single-page CV showcasing my education, skills, and career history.">
+    <meta property="og:description"
+        content="A professional single-page CV showcasing my education, skills, and career history.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://arunm.pages.dev">
     <meta property="og:image" content="https://your-website.com/preview-image.jpg">
@@ -35,9 +36,9 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <nav>
+    <nav class="">
         <div class="logo">
-            <img src="./assets/android-chrome-512x512.png" alt="logo" class="">
+            <img src="./assets/android-chrome-512x512.png" alt="logo">
             <h3>ARUN M</h3>
         </div>
         <ul>
@@ -49,46 +50,53 @@
         </ul>
     </nav>
 
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing my creative projects and articles</p>
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Showcasing my creative projects and articles</p>
+        </div>
     </header>
 
-    <main>
-        <header id="projects">
-            <h1>Projects</h1>
-        </header>
-        <section class="grid">
-            <div class="card">
-                <img src="project1.jpg" alt="Project 1">
-                <div class="card-content">
-                    <h2>Project 1</h2>
-                    <p>A brief description of Project 1.</p>
-                    <a href="https://github.com/yourusername/project1" target="_blank" class="btn">View on GitHub</a>
+    <main class="container">
+        <section id="projects">
+            <header>
+                <h1>Projects</h1>
+            </header>
+            <div class="grid">
+                <div class="card">
+                    <img src="project1.jpg" alt="Project 1">
+                    <div class="card-content">
+                        <h2>Project 1</h2>
+                        <p>A brief description of Project 1.</p>
+                        <a href="https://github.com/yourusername/project1" target="_blank" class="btn">View on
+                            GitHub</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="project2.jpg" alt="Project 2">
-                <div class="card-content">
-                    <h2>Project 2</h2>
-                    <p>A brief description of Project 2.</p>
-                    <a href="https://github.com/yourusername/project2" target="_blank" class="btn">View on GitHub</a>
+                <div class="card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <div class="card-content">
+                        <h2>Project 2</h2>
+                        <p>A brief description of Project 2.</p>
+                        <a href="https://github.com/yourusername/project2" target="_blank" class="btn">View on
+                            GitHub</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="project3.jpg" alt="Project 3">
-                <div class="card-content">
-                    <h2>Project 3</h2>
-                    <p>A brief description of Project 3.</p>
-                    <a href="https://github.com/yourusername/project3" target="_blank" class="btn">View on GitHub</a>
+                <div class="card">
+                    <img src="project3.jpg" alt="Project 3">
+                    <div class="card-content">
+                        <h2>Project 3</h2>
+                        <p>A brief description of Project 3.</p>
+                        <a href="https://github.com/yourusername/project3" target="_blank" class="btn">View on
+                            GitHub</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <header id="articles">
-            <h1>Articles</h1>
-        </header>
-        <section>
+        <section id="articles">
+            <header>
+                <h1>Articles</h1>
+            </header>
             <article>
                 <h2>Article 1</h2>
                 <p>Content of Article 1.</p>
@@ -99,20 +107,17 @@
             </article>
         </section>
 
-        <header id="contact">
-            <h1>Contact Me</h1>
-        </header>
-        <section>
+        <section id="contact">
+            <header>
+                <h1>Contact Me</h1>
+            </header>
             <form action="#" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                <br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <br>
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                <br>
                 <button type="submit" class="btn">Send</button>
             </form>
         </section>
@@ -120,7 +125,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> ARUN M. All Rights Reserved.</p>
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> ARUN M. All Rights Reserved.
+            </p>
         </div>
     </footer>
 </body>

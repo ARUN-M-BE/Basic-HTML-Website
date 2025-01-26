@@ -8,23 +8,38 @@ body {
     line-height: 1.6;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background: lightblue;
+}
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #333;
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
-nav .logo img{
-    width:100px;
-    height:100px;
+
+nav .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -56,7 +71,8 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    margin: 0;color:#000;
+    margin: 0;
+    color: #000;
 }
 
 header p {
@@ -69,7 +85,7 @@ header p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .card {
@@ -122,6 +138,31 @@ header p {
     background: #0097a7;
 }
 
+/* Articles Section */
+section {
+    padding: 2rem 0;
+}
+
+article {
+    background: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+article p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
 /* Form Styles */
 form {
     max-width: 500px;
@@ -138,7 +179,8 @@ form label {
     font-weight: bold;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 0.8rem;
     margin-bottom: 1rem;
